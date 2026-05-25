@@ -1,0 +1,50 @@
+{
+    "name": "tarot",
+    "display_name": "Tarots",
+    "version": "2.0.0",
+    "description": "塔罗牌占卜插件。支持命令模式（/占卜 /塔罗牌）和 Agent 模式，17 牌阵 + 78 张韦特/东方主题，问答模式 + 独立解读",
+    "author": "coco",
+    "license": "GPL-3.0",
+    "dependencies": {
+        "plugins": [],
+        "components": []
+    },
+    "include": [
+        {
+            "component_type": "agent",
+            "component_name": "tarot_divine",
+            "dependencies": [],
+            "enabled": true
+        },
+        {
+            "component_type": "event_handler",
+            "component_name": "tarot_answer",
+            "dependencies": [],
+            "enabled": true
+        },
+        {
+            "component_type": "command",
+            "component_name": "占卜",
+            "dependencies": [],
+            "enabled": true
+        },
+        {
+            "component_type": "command",
+            "component_name": "塔罗牌",
+            "dependencies": [],
+            "enabled": true
+        }
+    ],
+    "entry_point": "plugin.py",
+    "min_core_version": "1.0.0",
+    "python_dependencies": [
+        "pillow>=9.2.0"
+    ],
+    "dependencies_required": true,
+    "categories": [
+        "fun"
+    ],
+    "tags": [
+        "塔罗牌"
+    ]
+}
